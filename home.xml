@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Home">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+      android:weightSum="12"
+      android:orientation="horizontal">
+   <TextView
+       android:layout_width="0dp"
+       android:layout_weight="9"
+       android:layout_height="wrap_content"
+      android:id="@+id/txt_nama_user"
+      android:layout_margin="10dp"
+      android:text="Nama User"></TextView>
+   <Button
+       android:layout_width="0dp"
+       android:layout_weight="3"
+       android:layout_height="wrap_content"
+      android:text="Logout"
+      android:id="@+id/btn_logout"></Button>
+   </LinearLayout>
+
+
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+      android:id="@+id/btn_tambah"
+       android:layout_marginBottom="10dp"
+      android:text="Tambah Barang"></Button>
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/rv_mahasiswa"
+       tools:listitem="@layout/barang_item"
+       tools:itemCount="5"></androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>
